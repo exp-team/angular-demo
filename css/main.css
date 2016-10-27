@@ -1,0 +1,90 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+html,
+body,
+header,
+footer,
+div,
+ul,
+li,
+span,
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    font: 12px Helvetica;
+    -moz-user-select:none;
+    user-select:none;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 960px;
+    min-height: 800px;
+    background: #FDF5E6;
+}
+
+.wrapper > div {
+    align-items: stretch;
+    margin: 10px;
+    min-height: 750px;
+    height: 750px;
+    border: 1px solid green;
+    border-radius: 25px;
+}
+
+.container {
+    flex: 10 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > p {
+    width: 300px;
+    height: 50px;
+    margin: 100px auto;
+    text-align: center;
+    line-height: 50px;
+    border: 1px dotted #6d9eeb;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    font-size: 2em;
+    text-shadow: 5px 5px 5px #ee83ee;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+#componentCollection {
+    flex: 1 1 auto;
+}
+
+#componentCollection > p {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#componentCollection ul {
+    height: 100%;
+}
+
+#componentCollection li {
+    display: block;
+    margin: 10px auto;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #008B8B;
+}

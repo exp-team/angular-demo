@@ -1,0 +1,19 @@
+// @import url(../../common/css/componentCommon.css);
+
+.horizontal-component {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	-moz-user-select:none;/*火狐禁止选中*/
+	user-select: none;
+}
+
+.horizontal-component > div {
+	flex: 1 1 auto;
+	border-bottom: 1px solid blue;
+	height: 50%; // chrome下如果不设置，div都没有高度
+}
+
+.horizontal-component > div:last-child {
+	border-bottom: none;
+}
